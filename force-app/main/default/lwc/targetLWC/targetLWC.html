@@ -1,0 +1,10 @@
+<template>
+  <lightning-card>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-button label="Subscribe" onclick={subscribeMC}></lightning-button>
+      <lightning-button label="Unsubscribe" onclick={unsubscribeMC}></lightning-button>
+      <p>Latest Message Received</p>
+      <lightning-formatted-text value={messageFromSource}></lightning-formatted-text>
+  </div>
+  </lightning-card>
+</template>
