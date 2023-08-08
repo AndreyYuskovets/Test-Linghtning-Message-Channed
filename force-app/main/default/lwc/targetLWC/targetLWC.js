@@ -13,6 +13,10 @@ export default class TargetLWC extends LightningElement {
     this.subscribeToMessageChannel();
   }
 
+  get subscribed() {
+    return this.subscription ? 'connected with ' : 'disconnected from ';
+  }
+
   subscribeToMessageChannel() {
     if (!this.subscription) {
       this.subscription = subscribe(
