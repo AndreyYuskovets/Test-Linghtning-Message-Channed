@@ -1,0 +1,14 @@
+<template>
+  <lightning-card title="LMC Reciever component">
+    <div class="slds-box">
+      <p>Component is {subscribed}Lightning Message Channel</p><br>
+      <p>Latest Message Received</p>
+      <lightning-formatted-text value={messageFromSource}></lightning-formatted-text>
+
+      <div class="slds-p-around_medium">
+        <lightning-button label="Subscribe" onclick={subscribeToMessageChannel}></lightning-button>
+        <lightning-button label="Unsubscribe" onclick={unsubscribeToMessageChannel}></lightning-button>
+      </div>
+    </div>
+  </lightning-card>
+</template>
